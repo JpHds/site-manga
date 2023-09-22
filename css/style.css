@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Public+Sans:wght@100&family=Ruda:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
     background-color: red;
-    margin-top: 120px;
+    margin-top: 50px;
+    cursor: default;
 }
 
 html {
@@ -20,11 +23,21 @@ footer {
     min-height: 23vh;
 }
 
+.carousel-item h5{
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    text-shadow: black 2px 2px;
+}
+
+.carousel-item p {
+    text-shadow: black 1px 1px;
+}
+
 #principal-menu {
     top: 0;
     position: fixed;
     background-color: rgb(128, 30, 30);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.185);
     width: 100%;
     z-index: 10;
 }
@@ -106,4 +119,21 @@ footer {
 
 .btn-for-top.visible {
     visibility: visible;
+}
+
+.imagem-ex {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.img-ex {
+    border: 1px solid black;
+    padding-right: 4px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
 }
