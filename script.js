@@ -13,3 +13,13 @@
       });
     }, false);
   })();
+
+  const button = document.querySelector(".btn-for-top");
+
+  window.addEventListener("scroll", function (event) {
+    if (window.scrollY <= 150) {
+      button.classList.remove("visible");
+    } else {
+      button.classList.add("visible");
+    }
+  });

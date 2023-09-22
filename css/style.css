@@ -5,14 +5,19 @@ body {
     margin-top: 120px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Oswald', sans-serif;
 }
 
 footer {
     background-color: rgb(128, 30, 30);
-    height: 20vh;
     width: 100%;
+    padding: 2% 5% 0 5%;
+    min-height: 23vh;
 }
 
 #principal-menu {
@@ -31,21 +36,74 @@ footer {
     padding: 2%;
 }
 
-
-@media screen and (min-width: 300px) {
-    #principal-menu {
-        height: 12vh;
-    }
+#main-footer {
+    display: grid;
+    grid-template-columns: 30% 20%;
+    gap: 30%;
 }
 
-@media screen and (min-width: 500px) {
-    #principal-menu {
-        height: 12vh;
-    }
+#main-footer ul {
+    list-style: none;
+    margin-bottom: 0;
 }
 
-@media screen and (min-width: 1500px) {
-    #principal-menu {
-        height: 10vh;
-    }
+#main-footer ul li{
+    padding-top: 1%;
+    font-size: clamp(0.5em, 1em, 2em);
+}
+
+
+#main-footer span {
+    color: black;
+    font-family: 'Oswald', sans-serif
+}
+
+#main-footer ul li span {
+    cursor: pointer;
+    color: rgb(19, 19, 19);
+}
+
+#main-footer ul li img {
+    padding-right: 2%;
+    cursor: pointer;
+}
+
+#network li {
+    padding-bottom: 5%;
+}
+
+.btn-for-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #110d0d;
+    box-shadow: 0px 0px 5px 1px #535353bd;
+    border-radius: 25px;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+.btn-for-top::after {
+    content: "↑";
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(128, 30, 30);
+    transition: margin-top 250ms;
+}
+
+.btn-for-top:hover::after {
+    margin-top:-8px;
+}
+
+.btn-for-top:hover {
+    text-decoration: none;
+}
+
+.btn-for-top.visible {
+    visibility: visible;
 }
