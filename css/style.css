@@ -39,7 +39,7 @@ footer {
     background-color: rgb(128, 30, 30);
     border-bottom: 2px solid rgba(0, 0, 0, 0.185);
     width: 100%;
-    z-index: 10;
+    z-index: 20;
 }
 
 #form-contato {
@@ -121,21 +121,8 @@ footer {
     visibility: visible;
 }
 
-.imagem-ex {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-}
-
-.img-ex {
-    border: 1px solid black;
-    padding-right: 4px;
-    box-shadow: 1px 1px 1px 1px black;
-}
-
 .title-mangassau {
     display: flex;
-    margin: auto;
     justify-content: center;
 }
 
@@ -149,7 +136,77 @@ footer {
     justify-content: center;
 }
 
+.buy {
+    background-color: green;
+    line-height: 2em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.4s ease;
+}
+
+.buy:hover {
+    color: rgb(204, 255, 207);
+    background-color: rgb(17, 196, 17);
+}
+
+.select-page {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.select-page .not-selected {
+    margin: 0 6px 0 6px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    padding: 3px 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.select-page .not-selected:hover {
+    background-color: white;
+    color: rgba(255, 0, 0, 0.479);
+    border: none;
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 6px 5px 15px 5px #000000d6;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#selected {
+    margin: 0 6px 0 6px;
+    padding: 3px 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgba(255, 0, 0, 0.479);
+    text-decoration: none;
+}
+
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
+}
+
+@media screen and (max-width:700px){
+    .title-mangassau img {
+        width: 300px;
+    }
 }

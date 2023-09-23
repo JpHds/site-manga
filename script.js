@@ -14,6 +14,7 @@
     }, false);
   })();
 
+
   const button = document.querySelector(".btn-for-top");
 
   window.addEventListener("scroll", function (event) {
