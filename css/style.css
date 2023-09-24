@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
-    background-color: rgb(158, 0, 0);
+    background-color: rgb(105, 24, 24);
     margin-top: 50px;
     cursor: default;
     -moz-user-select: -moz-none;
@@ -129,6 +129,7 @@ footer {
 .title-mangassau {
     display: flex;
     justify-content: center;
+    margin: 80px 0;
 }
 
 .carousel {
@@ -186,13 +187,12 @@ footer {
 
 .card {
     box-shadow: 6px 5px 15px 5px #000000d6;
-    transition: all 1s ease-in-out;
-    margin: 0 10% 0 10%;
+    transition: all 0.5s ease-in-out;
     z-index: 1;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: pointer;
     box-shadow: none;
     z-index: 2;
@@ -219,6 +219,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media screen and (max-width:700px){
     .title-mangassau img {
-        width: 300px;
+        width: 400px;
     }
 }
