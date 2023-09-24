@@ -1,0 +1,36 @@
+.btn-for-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #110d0d;
+    box-shadow: 0px 0px 5px 1px #535353bd;
+    border-radius: 25px;
+    text-decoration: none;
+    z-index: 20;
+    visibility: hidden;
+}
+
+.btn-for-top::after {
+    content: "↑";
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(128, 30, 30);
+    transition: margin-top 250ms;
+}
+
+.btn-for-top:hover::after {
+    margin-top:-8px;
+}
+
+.btn-for-top:hover {
+    text-decoration: none;
+}
+
+.btn-for-top.visible {
+    visibility: visible;
+}

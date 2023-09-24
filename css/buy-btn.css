@@ -1,0 +1,19 @@
+.buy {
+    background-color: green;
+    line-height: 2em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.4s ease;
+}
+
+.buy:hover {
+    color: rgb(204, 255, 207);
+    background-color: rgb(17, 196, 17);
+}

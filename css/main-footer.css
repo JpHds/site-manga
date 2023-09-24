@@ -1,0 +1,31 @@
+#main-footer {
+    display: grid;
+    grid-template-columns: 30% 20%;
+    gap: 30%;
+}
+
+#main-footer ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#main-footer ul li{
+    padding-top: 1%;
+    font-size: clamp(0.5em, 1em, 2em);
+}
+
+
+#main-footer span {
+    color: black;
+    font-family: 'Oswald', sans-serif
+}
+
+#main-footer ul li span {
+    cursor: pointer;
+    color: rgb(19, 19, 19);
+}
+
+#main-footer ul li img {
+    padding-right: 2%;
+    cursor: pointer;
+}

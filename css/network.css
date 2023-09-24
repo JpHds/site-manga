@@ -1,0 +1,11 @@
+#network li {
+    padding-bottom: 5%;
+}
+
+#network img {
+    transition: 0.8s all ease-in-out;
+}
+
+#network img:hover {
+    transform: skew(180deg);
+}
