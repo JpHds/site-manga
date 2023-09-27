@@ -7,5 +7,5 @@
 }
 
 #network img:hover {
-    transform: translateX(360deg);
+    transform: rotateX(360deg);
 }
