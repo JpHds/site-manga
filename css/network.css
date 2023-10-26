@@ -5,7 +5,3 @@
 #network img {
     transition: 0.8s all ease-in-out;
 }
-
-#network img:hover {
-    transform: rotateY(360deg);
-}
